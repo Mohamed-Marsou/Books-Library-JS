@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="image/png" href="images/icons8-book-stack-96.png" />
+    <title>MTM | Library</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/icons8-book-stack-96.png" alt="logo" />
+      <h1>MTM LABRARY</h1>
+    </nav>
+    <section>
+      <div class="side__info-bar">
+        <p>Total Books : <small id="total_b">0</small></p>
+        <p>Total read : <small id="total_read">0</small></p>
+        <p>Total pages read : <small id="total_pages">0</small></p>
+
+        <div class="add__new__book">
+          <span class="material-symbols-outlined"> add_box </span>
+          <h3>Add new</h3>
+        </div>
+
+        <div class="my-gthb">
+          <h2>
+            Created by
+            <a href="https://github.com/Mohamed-Marsou">Mohamed Marsou</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="books__modules">
+        <!-- <div class="expml_module">
+          <h2>Title : <small>Long book</small></h2>
+          <h2>Author : <small>MTM </small></h2>
+          <h2>Pages : <small>165</small></h2>
+
+          <div class="readNotRead"><p id="bookStt">Not read</p></div>
+          <div class="Remove"><p>Remove</p></div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- adding Moudle -->
+    <div class="overlay"></div>
+    <div class="add__moudle_box">
+      <h2>Add a new Book</h2>
+      <span class="material-symbols-outlined" class="close_me"> close </span>
+
+      <input type="text" name="title" id="title" placeholder="Tilte" />
+      <input type="text" name="auth" id="auth" placeholder="Author" />
+      <input
+        type="number"
+        name="pages"
+        id="pages"
+        placeholder="Number of pages"
+      />
+      <div class="if__read">
+        <input type="checkbox" name="read" id="read" checked />
+        <p>Did you read this book yet?</p>
+      </div>
+      <div class="btn_modl__wrapper">
+        <form>
+          <button id="add_new__boook" type="submit">ADD</button>
+        </form>
+      </div>
+    </div>
+    <script src="./javaScript/main.js"></script>
+  </body>
+</html>
